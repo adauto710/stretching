@@ -3,17 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Site do SESC Campo Mourão com apoio da CIPA para promover alongamentos diários e seus benefícios para os funcionários">
-    <title>SESC Campo Mourão - Alongamentos Futurísticos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
+    <title>SESC - CIPA</title>
 </head>
 
 <body>
@@ -31,7 +24,7 @@
                     </div>
                 </div>
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
                     <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
                     <li><a href="#exercicios" class="nav-link">Exercícios</a></li>
                     <li><a href="#notificacoes" class="nav-link">Notificações</a></li>
@@ -60,12 +53,16 @@
             </div>
             <div class="hero-visual">
                 <div class="robot-container">
-                    <img src="images/robots/foto1.jpg" alt="Robô futurístico se alongando" class="hero-robot floating">
+                    <img src="images/robots/foto1.jpg" alt="Robô futurístico se alongando" class="hero-robot floating"
+                        style="animation-delay: 0s; animation-duration: 4s;">
                 </div>
                 <div class="geometric-elements">
-                    <div class="circle circle-1"></div>
-                    <div class="triangle triangle-1"></div>
-                    <div class="circle circle-2"></div>
+                    <div class="circle circle-1 rotate" style="animation-duration: 4s; transform: translateY(0px);">
+                    </div>
+                    <div class="triangle triangle-1 pulse" style="animation-duration: 4s; transform: translateY(0px);">
+                    </div>
+                    <div class="circle circle-2 rotate" style="animation-duration: 4s; transform: translateY(0px);">
+                    </div>
                 </div>.
             </div>
         </div>
@@ -77,53 +74,59 @@
             <h2 class="section-title">Benefícios do <span class="gradient-text">Alongamento</span></h2>
             <div class="benefits-robot-img" style="text-align:center; margin-bottom: 2rem;">
                 <img src="images/robots/robot_stretching_1.png" alt="Robô se alongando"
-                    style="max-width:220px; width:100%; height:auto;" />
+                    style="max-width:220px; width:100%; height:auto;">
             </div>
 
-            <div class="benefits-grid">
-                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="benefits-grid animate-in">
+                <div class="benefit-card animate-in slide-up" data-aos="fade-up" data-aos-delay="100">
                     <div style="text-align:center; margin-bottom: 0.5rem;">
-                        <img src="images/robots/robot_stretching_2.png" alt="Robô relaxando" style="max-width:90px; width:100%; height:auto;" />
+                        <img src="images/robots/robot_stretching_2.png" alt="Robô relaxando"
+                            style="max-width:90px; width:100%; height:auto;">
                     </div>
                     <h3>Redução do Estresse</h3>
                     <p>Diminui a tensão muscular e promove relaxamento mental durante o trabalho</p>
                 </div>
 
-                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-card slide-up animate-in" data-aos="fade-up" data-aos-delay="200">
                     <div style="text-align:center; margin-bottom: 0.5rem;">
-                        <img src="images/robots/robot_stretching_3.png" alt="Robô postura" style="max-width:90px; width:100%; height:auto;" />
+                        <img src="images/robots/robot_stretching_3.png" alt="Robô postura"
+                            style="max-width:90px; width:100%; height:auto;">
                     </div>
                     <h3>Melhora da Postura</h3>
                     <p>Corrige desequilíbrios musculares causados por longas horas sentado</p>
                 </div>
 
-                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="benefit-card slide-up animate-in" data-aos="fade-up" data-aos-delay="300">
                     <div style="text-align:center; margin-bottom: 0.5rem;">
-                        <img src="images/robots/robot_stretching_1.png" alt="Robô flexibilidade" style="max-width:90px; width:100%; height:auto;" />
+                        <img src="images/robots/robot_stretching_1.png" alt="Robô flexibilidade"
+                            style="max-width:90px; width:100%; height:auto;">
                     </div>
                     <h3>Aumento da Flexibilidade</h3>
                     <p>Melhora a amplitude de movimento e reduz a rigidez muscular</p>
                 </div>
 
-                <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="benefit-card slide-up animate-in" data-aos="fade-up" data-aos-delay="400">
                     <div style="text-align:center; margin-bottom: 0.5rem;">
-                        <img src="images/robots/robot_stretching_2.png" alt="Robô prevenção de lesões" style="max-width:90px; width:100%; height:auto;" />
+                        <img src="images/robots/robot_stretching_2.png" alt="Robô prevenção de lesões"
+                            style="max-width:90px; width:100%; height:auto;">
                     </div>
                     <h3>Prevenção de Lesões</h3>
                     <p>Fortalece músculos e articulações, prevenindo lesões ocupacionais</p>
                 </div>
 
-                <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="benefit-card slide-up animate-in" data-aos="fade-up" data-aos-delay="500">
                     <div style="text-align:center; margin-bottom: 0.5rem;">
-                        <img src="images/robots/robot_stretching_3.png" alt="Robô circulação" style="max-width:90px; width:100%; height:auto;" />
+                        <img src="images/robots/robot_stretching_3.png" alt="Robô circulação"
+                            style="max-width:90px; width:100%; height:auto;">
                     </div>
                     <h3>Melhora da Circulação</h3>
                     <p>Estimula o fluxo sanguíneo e reduz o inchaço nas extremidades</p>
                 </div>
 
-                <div class="benefit-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="benefit-card slide-up animate-in" data-aos="fade-up" data-aos-delay="600">
                     <div style="text-align:center; margin-bottom: 0.5rem;">
-                        <img src="images/robots/robot_stretching_1.png" alt="Robô produtividade" style="max-width:90px; width:100%; height:auto;" />
+                        <img src="images/robots/robot_stretching_1.png" alt="Robô produtividade"
+                            style="max-width:90px; width:100%; height:auto;">
                     </div>
                     <h3>Aumento da Produtividade</h3>
                     <p>Melhora o foco, concentração e disposição para as atividades diárias</p>
@@ -136,44 +139,44 @@
     <!-- Tecnologia e Saúde Section -->
     <section class="tech-health" id="tecnologia">
         <div class="container">
-            <h2 class="section-title">Tecnologia & <span class="gradient-text">Saúde</span></h2>
+            <h2 class="section-title">Tecnologia &amp; <span class="gradient-text">Saúde</span></h2>
             <div class="robot-gallery">
-                <div class="robot-item" data-aos="zoom-in" data-aos-delay="100">
+                <div class="robot-item animate-in" data-aos="zoom-in" data-aos-delay="100">
                     <img src="images/robots/robot_stretching_1.png" alt="Robô fazendo alongamento de braços"
-                        class="robot-img pulse">
+                        class="robot-img pulse floating" style="animation-delay: 0.5s; animation-duration: 4s;">
                     <div class="robot-overlay">
                         <h4>Alongamento de Braços</h4>
                         <p>Movimento futurístico para relaxar ombros e braços</p>
                     </div>
                 </div>
-                <div class="robot-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="robot-item animate-in" data-aos="zoom-in" data-aos-delay="200">
                     <img src="images/robots/robot_stretching_2.png" alt="Robô fazendo alongamento de pernas"
-                        class="robot-img pulse">
+                        class="robot-img pulse floating" style="animation-delay: 1s; animation-duration: 4s;">
                     <div class="robot-overlay">
                         <h4>Alongamento de Pernas</h4>
                         <p>Tecnologia avançada para flexibilidade das pernas</p>
                     </div>
                 </div>
-                <div class="robot-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="robot-item animate-in" data-aos="zoom-in" data-aos-delay="300">
                     <img src="images/robots/robot_stretching_3.png" alt="Robô fazendo alongamento completo"
-                        class="robot-img pulse">
+                        class="robot-img pulse floating" style="animation-delay: 1.5s; animation-duration: 4s;">
                     <div class="robot-overlay">
                         <h4>Alongamento Completo</h4>
                         <p>Movimento integral para todo o corpo</p>
                     </div>
                 </div>
             </div>
-            <div class="tech-stats">
+            <div class="tech-stats animate-in">
                 <div class="stat-item">
-                    <span class="stat-number">85%</span>
+                    <span class="stat-number count-animation">85%</span>
                     <span class="stat-label">Redução de Dores</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">92%</span>
+                    <span class="stat-number count-animation">92%</span>
                     <span class="stat-label">Melhora do Bem-estar</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">78%</span>
+                    <span class="stat-number count-animation">78%</span>
                     <span class="stat-label">Aumento da Produtividade</span>
                 </div>
             </div>
@@ -184,38 +187,38 @@
     <section class="exercises" id="exercicios">
         <div class="container">
             <h2 class="section-title">Exercícios de <span class="gradient-text">Alongamento</span></h2>
-            <div class="exercises-grid">
-                <div class="exercise-card" data-aos="slide-up" data-aos-delay="100">
+            <div class="exercises-grid animate-in">
+                <div class="exercise-card animate-in slide-up" data-aos="slide-up" data-aos-delay="100">
                     <div class="exercise-number">01</div>
                     <h3>Alongamento de Pescoço</h3>
                     <p>Incline suavemente a cabeça para os lados, frente e trás</p>
                     <div class="exercise-duration">30 segundos</div>
                 </div>
-                <div class="exercise-card" data-aos="slide-up" data-aos-delay="200">
+                <div class="exercise-card animate-in slide-up" data-aos="slide-up" data-aos-delay="200">
                     <div class="exercise-number">02</div>
                     <h3>Rotação de Ombros</h3>
                     <p>Faça movimentos circulares com os ombros para frente e para trás</p>
                     <div class="exercise-duration">45 segundos</div>
                 </div>
-                <div class="exercise-card" data-aos="slide-up" data-aos-delay="300">
+                <div class="exercise-card slide-up animate-in" data-aos="slide-up" data-aos-delay="300">
                     <div class="exercise-number">03</div>
                     <h3>Alongamento de Braços</h3>
                     <p>Estenda os braços acima da cabeça e para os lados</p>
                     <div class="exercise-duration">60 segundos</div>
                 </div>
-                <div class="exercise-card" data-aos="slide-up" data-aos-delay="400">
+                <div class="exercise-card animate-in slide-up" data-aos="slide-up" data-aos-delay="400">
                     <div class="exercise-number">04</div>
                     <h3>Torção de Tronco</h3>
                     <p>Gire o tronco suavemente para a esquerda e direita</p>
                     <div class="exercise-duration">45 segundos</div>
                 </div>
-                <div class="exercise-card" data-aos="slide-up" data-aos-delay="500">
+                <div class="exercise-card slide-up animate-in" data-aos="slide-up" data-aos-delay="500">
                     <div class="exercise-number">05</div>
                     <h3>Alongamento de Pernas</h3>
                     <p>Estique as pernas e flexione os pés alternadamente</p>
                     <div class="exercise-duration">60 segundos</div>
                 </div>
-                <div class="exercise-card" data-aos="slide-up" data-aos-delay="600">
+                <div class="exercise-card slide-up animate-in" data-aos="slide-up" data-aos-delay="600">
                     <div class="exercise-number">06</div>
                     <h3>Relaxamento Geral</h3>
                     <p>Respire profundamente e relaxe todos os músculos</p>
@@ -265,6 +268,13 @@
                             <li>Personalize o horário conforme sua preferência</li>
                         </ul>
                     </div>
+                    <div class="time-customizer">
+                        <div class="customizer-content">
+                            <h4>Personalizar Horário</h4>
+                            <input type="time" id="custom-time" value="08:00">
+                            <button class="btn btn-small" onclick="updateNotificationTime()">Atualizar</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="notification-visual">
                     <div class="notification-demo">
@@ -310,7 +320,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 SESC Campo Mourão com apoio da CIPA. Todos os direitos reservados.</p>
+                <p>© 2024 SESC Campo Mourão com apoio da CIPA. Todos os direitos reservados.</p>
                 <p>Desenvolvido com 💙 para promover saúde e tecnologia</p>
             </div>
         </div>
@@ -320,6 +330,70 @@
     <script src="js/main.js"></script>
     <script src="js/timer.js"></script>
     <script src="js/notifications.js"></script>
-</body>
 
+
+    <div class="particle-container"
+        style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; pointer-events: none; z-index: -1;">
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 56.9777%; top: 39.2512%; animation-delay: 0.725449s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 13.6173%; top: 76.3172%; animation-delay: 2.26607s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 32.6816%; top: 88.5221%; animation-delay: 1.15538s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 43.4847%; top: 91.1921%; animation-delay: 2.91534s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 41.9173%; top: 81.2597%; animation-delay: 1.43623s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 6.07431%; top: 17.9199%; animation-delay: 3.84691s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 61.4198%; top: 35.9897%; animation-delay: 2.61085s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 86.8083%; top: 13.9527%; animation-delay: 1.63769s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 53.8072%; top: 73.5026%; animation-delay: 1.21625s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 61.3247%; top: 58.2773%; animation-delay: 0.441829s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 61.1168%; top: 15.1881%; animation-delay: 4.01304s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 16.2644%; top: 0.392467%; animation-delay: 1.85093s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 16.4751%; top: 71.7639%; animation-delay: 4.55036s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 25.0149%; top: 0.301463%; animation-delay: 2.42024s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 63.5401%; top: 52.0394%; animation-delay: 0.588354s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 34.89%; top: 30.3574%; animation-delay: 5.73367s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 20.9294%; top: 14.4529%; animation-delay: 1.10859s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 39.5009%; top: 29.2468%; animation-delay: 3.49031s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 16.5959%; top: 88.123%; animation-delay: 2.72042s;">
+        </div>
+        <div class="particle"
+            style="position: absolute; width: 2px; height: 2px; background: var(--neon-cyan); border-radius: 50%; opacity: 0.7; left: 20.6534%; top: 73.8369%; animation-delay: 4.28277s;">
+        </div>
+    </div>
+</body>
 </html>
